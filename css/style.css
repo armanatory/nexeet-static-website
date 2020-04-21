@@ -31,8 +31,26 @@ body {
 /*------------------
  Header section
 ------------------*/
+#header-section{
+    position: absolute;
+    width: 100%;
+    padding-top: 20px;
+    z-index: 10;
+}
 
+#main-menu {
+    list-style: none;
+    float: right;
+    padding-top: 20px;
+}
 
 /*------------------
  Top section
 ------------------*/
+#top-section{
+    background: url('../img/bg.jpg');
+    background-size: cover;      
+    background-repeat: no-repeat;
+    background-position: center center; 
+    height: 100vh;
+}
