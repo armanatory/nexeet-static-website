@@ -106,3 +106,51 @@ body {
 	height: 100%;
 	position: relative;
 }
+
+.site-btn{
+    float: right;
+	background: #091221;
+    color: #fff;
+	font-size: 14px;
+	padding: 12px 19px;
+	line-height: 1;
+    border-radius: 14px;
+    font-weight: bold;
+}
+
+
+/*-- Twilinking --*/
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.twinkling{
+    position:absolute;
+    top:10vh;
+    left:1vw;
+    width:99vw;
+    height:40vh;
+    display:block;
+
+    /*animation*/
+    background:transparent url('../img/twinkling.png') repeat top center;
+    z-index:1;
+    -moz-animation:move-twink-back 200s linear infinite;
+    -ms-animation:move-twink-back 200s linear infinite;
+    -o-animation:move-twink-back 200s linear infinite;
+    -webkit-animation:move-twink-back 200s linear infinite;
+    animation:move-twink-back 900s linear infinite;
+  }
