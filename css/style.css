@@ -149,11 +149,11 @@ body {
         }
         25% {
             left: 0px;
-            bottom: 2px;
+            bottom: 0px;
         }
         50% {
             left: -2px;
-            bottom: 0px;
+            bottom: 2px;
         }
         75% {
             left: 0px;
@@ -172,11 +172,11 @@ body {
         }
         25% {
             left: 0px;
-            bottom: 2px;
+            bottom: 0px;
         }
         50% {
             left: -2px;
-            bottom: 0px;
+            bottom: 2px;
         }
         75% {
             left: 0px;
