@@ -27,16 +27,25 @@ body {
 /*------------------
  Common elements
 ------------------*/
-
+.site-btn{
+    background: #4e008e;
+	color: #fff;
+	font-size: 14px;
+	padding: 12px 19px;
+	line-height: 1;
+    border-radius: 14px;
+    
+}
 
 /*------------------
  Header section
 ------------------*/
 #header-section{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     padding-top: 20px;
-    z-index: 10;
+    height: 5vh;
+    /* z-index: 10; */
 }
 
 .main-menu {
@@ -54,13 +63,13 @@ body {
 .main-menu li a{
     display: inline-block;
     margin-left: 30px;
-    color: #fdfdfd;
+    color: #4e008e;
     font-weight: bold;
 }
 
 .user-panel-button {
 	float: right;
-	background: #091221;
+	background: #4e008e;
 	color: #fff;
 	font-size: 14px;
 	padding: 12px 19px;
@@ -80,13 +89,9 @@ body {
 .site-logo {
 	display: inline-block;
     margin-left: 50px;
-    /*background-color: #e6ebf9;
-    padding:5px;
-    border-radius: 18px;*/
 }
 .site-logo img{
     height:50px;
-    filter: invert(1);
 }
 .nav-warp {
 	float: right;
@@ -96,11 +101,11 @@ body {
  Top section
 ------------------*/
 #top-section{
-    background: url('../img/bg.jpg');
+    background: url('../img/header-bg.png');
     background-size: cover;      
     background-repeat: no-repeat;
     background-position: center center; 
-    height: 100vh;
+    height: 95vh;
 }
 
 .top-content {
@@ -115,69 +120,91 @@ body {
 	-ms-flex-pack: center;
 	justify-content: center;
 	height: 100%;
-	position: relative;
-}
-
-.site-btn{
-    float: right;
-	background: #091221;
-    color: #fff;
-	font-size: 14px;
-	padding: 12px 19px;
-	line-height: 1;
-    border-radius: 14px;
-    font-weight: bold;
+    position: relative;
+    color: #4e008e;
 }
 
 
-/*-- Twilinking --*/
-@keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-@-webkit-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-@-moz-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-@-ms-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
+    /* ---- rocket---*/
+    .top-rocket {
+        /*position: absolute;
+        bottom: 20vh;
+        right: -198px;*/
+    }
 
-.twinkling{
-    position:absolute;
-    top:10vh;
-    left:1vw;
-    width:99vw;
-    height:40vh;
-    display:block;
+    .top-rocket img {
+        position: relative;
+    }
+    .top-rocket{
+        -webkit-animation: rocket 2s linear infinite;
+        animation: rocket 2s linear infinite;
+    }
 
-    /*animation*/
-    background:transparent url('../img/twinkling.png') repeat top center;
-    z-index:1;
-    -moz-animation:move-twink-back 200s linear infinite;
-    -ms-animation:move-twink-back 200s linear infinite;
-    -o-animation:move-twink-back 200s linear infinite;
-    -webkit-animation:move-twink-back 200s linear infinite;
-    animation:move-twink-back 900s linear infinite;
-  }
+    /* ---------- rocket animation ----------*/
+    
+    @-webkit-keyframes rocket {
+        0% {
+            left: 2px;
+            bottom: 2px;
+        }
+        25% {
+            left: -2px;
+            bottom: 2px;
+        }
+        50% {
+            left: -2px;
+            bottom: 0px;
+        }
+        75% {
+            left: 0px;
+            bottom: 0px;
+        }
+        100% {
+            left: 2px;
+            bottom: 2px;
+        }
+    }
 
+    @keyframes rocket {
+        0% {
+            left: 2px;
+            bottom: 2px;
+        }
+        25% {
+            left: -2px;
+            bottom: 2px;
+        }
+        50% {
+            left: -2px;
+            bottom: 0px;
+        }
+        75% {
+            left: 0px;
+            bottom: 0px;
+        }
+        100% {
+            left: 2px;
+            bottom: 2px;
+        }
+    }
 
   /* ---- down arrow sign---*/
   #down-arrow-btn{
     position: absolute;
-    right: 0;
-    left: 0;
+    width: 100vw;
     bottom: 20px;
-    color: #fff;
-    width: 150px;
-    height: 60px;
     margin: auto;
     cursor: pointer;
-    text-align: center;
   }
+  #down-arrow-btn a{
+    background: #4e008e;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 19px;
+    line-height: 1;
+    border-radius: 14px;
+    font-weight: bold;
+  }
+
+
       
