@@ -39,17 +39,19 @@ body {
     z-index: 10;
 }
 
-#main-menu {
+.main-menu {
     list-style: none;
     float: right;
     padding-top: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-#main-menu li{
+.main-menu li{
     display: inline;
 }
 
-#main-menu li a{
+.main-menu li a{
     display: inline-block;
     margin-left: 30px;
     color: #fdfdfd;
@@ -60,13 +62,14 @@ body {
 	float: right;
 	background: #091221;
 	color: #fff;
-	margin-left: 30px;
-	margin-right: 70px;
-	margin-top: 0px;
 	font-size: 14px;
 	padding: 12px 19px;
 	line-height: 1;
-	border-radius: 14px;
+    border-radius: 14px;
+    
+	margin-left: 30px;
+	margin-right: 70px;
+    margin-top: 1rem;
 }
 
 .user-panel-button a {
@@ -76,7 +79,14 @@ body {
 
 .site-logo {
 	display: inline-block;
-	margin-left: 50px;
+    margin-left: 50px;
+    /*background-color: #e6ebf9;
+    padding:5px;
+    border-radius: 18px;*/
+}
+.site-logo img{
+    height:50px;
+    filter: invert(1);
 }
 .nav-warp {
 	float: right;
