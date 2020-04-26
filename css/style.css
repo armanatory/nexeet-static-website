@@ -89,6 +89,8 @@ body {
 .site-logo {
 	display: inline-block;
     margin-left: 50px;
+    color:  #4e008e;
+    font-weight: bold;
 }
 .site-logo img{
     height:50px;
