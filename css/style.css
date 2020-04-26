@@ -92,6 +92,9 @@ body {
     color:  #4e008e;
     font-weight: bold;
 }
+.site-logo a{
+	font-style: normal;
+}
 .site-logo img{
     height:50px;
 }
